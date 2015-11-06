@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		735795E9049A77EB00C919A3 /* CircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26CC921500C6AB3B02CA0F60 /* CircleView.h */; };
-		735795EA049A77EB00C919A3 /* Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 735795E5049A77D400C919A3 /* Prefix.h */; };
 		735795EC049A77EB00C919A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		735795ED049A77EB00C919A3 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 26D7C8D100C6ABF402CA0F60 /* MainMenu.nib */; };
 		735795EE049A77EB00C919A3 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 263D7D5D00F66BDD02CA0F60 /* README.rtf */; };
@@ -38,8 +37,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		41BF245905E2BB8200E67C27 /* Info-CircleView.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Info-CircleView.plist"; sourceTree = "<group>"; };
-		735795E5049A77D400C919A3 /* Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		41BF245905E2BB8200E67C27 /* Info-CircleView.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-CircleView.plist"; sourceTree = "<group>"; };
 		735795F6049A77EB00C919A3 /* CircleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,7 +96,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				735795E5049A77D400C919A3 /* Prefix.h */,
 				41BF245905E2BB8200E67C27 /* Info-CircleView.plist */,
 			);
 			name = CircleView;
@@ -138,7 +135,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				735795E9049A77EB00C919A3 /* CircleView.h in Headers */,
-				735795EA049A77EB00C919A3 /* Prefix.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +172,6 @@
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CircleView */;
 			projectDirPath = "";
 			projectRoot = "";
-			shouldCheckCompatibility = 1;
 			targets = (
 				735795E7049A77EB00C919A3 /* CircleView */,
 			);
@@ -245,7 +240,6 @@
 				INFOPLIST_FILE = "Info-CircleView.plist";
 				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
 				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = CircleView;
@@ -304,24 +298,24 @@
 		B69BDCFC08A2DDF4008AC9B5 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 			};
 			name = Development;
 		};
 		B69BDCFD08A2DDF4008AC9B5 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 			};
 			name = Deployment;
 		};
 		B69BDCFE08A2DDF4008AC9B5 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 			};
 			name = Default;
 		};
